@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+        *{
+            box-sizing:border-box;
+        }
+        [class*="col-"]{
+            padding: 15px; float:left; width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+
+        .image{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            margin:0 auto;
+            border: 20px double darkgrey;
+        }
+        .container{
+            width:80%;
+            margin:0 auto;
+        }
+        .box{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>NAMA : ADI BAGAS SETIYAWAN</h1>
+    <h1>KELAS : XII RPL 1</h1>
+    <h1>NO ABSEN : 1</h1>
+    <div class="container">
+        <h3>Image Galery</h3>
+        <div class="box col-3 col-s-6">
+            <img src="soeharto.jpg" class="image">
+            <h2>Soeharto</h2>
+            <p>Soeharto adalah presiden RI yang kedua</p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="habibi.jpg" class="image">
+            <h2>Baharuddin Jusuf Habibie</h2>
+            <p>BJ Habibie adalah presiden RI yang ketiga</p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="gusdur.jpg" class="image">
+            <h2>KH. Abdurrahman Wahid</h2>
+            <p>KH. Abdurrahman Wahid (Gus Dur) adalah presiden RI yang keempat</p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="sby.jpg" class="image">
+            <h2>Susilo Bambang Yudhoyono</h2>
+            <p>Susilo Bambang Yudhoyono (SBY) adalah presiden RI yang keenam</p>
+        </div>
+    </div>
+</body>
+</html>

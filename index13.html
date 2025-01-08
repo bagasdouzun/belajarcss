@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+        * {
+            box-sizing:border-box;
+        }
+        [class*="col-"]{
+            padding: 15px; float:left; width: 100%;
+        }
+        .header{
+            background: url("logo.jpg") #5e0001 no-repeat center;
+            background-size: 100px 100px;
+            height: 200px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            .header{
+                background: url("logo.jpg") #5e0001 no-repeat center;
+                height: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            .header{
+                background: url("logo.jpg") #5e0001 no-repeat center;
+                height: 200px;
+            }
+        }
+
+        .container{
+            width:80%;
+            margin:0 auto;
+        }
+        .sidebar ul{
+            list-style-type:none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background: red;
+        }
+        .sidebar ul li{
+            float: left;
+            width: 100%;
+            border-bottom: 2px solid #5e0001;
+        }
+        .sidebar ul li a{
+            display: block;
+            text-decoration: none;
+            color:#fff;
+            padding: 15px;
+            text-align: left;
+        }
+        .content{ text-align:justify; }
+        .footer{
+            background: #5e0001;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>NAMA : ADI BAGAS SETIYAWAN</h1>
+    <h1>KELAS : XII RPL 1</h1>
+    <h1>NO ABSEN : 1</h1>
+    <div class="container">
+        <!-- header mulai -->
+        <div class="col-12 header">
+        </div>
+        <!-- akhir header -->
+        <!-- awal menu -->
+        <div class="col-3 col-s-5 sidebar">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+            </ul>
+        </div>
+        <!-- akhir menu -->
+        <!-- awal konten -->
+        <div class="col-9 col-s-7 content">
+            <p>
+                It is a long established fact that a reader will be
+                distracted
+                by the readable content of a page when looking at its
+                layout.
+                
+                The point of using Lorem Ipsum is that it has a more-
+                or-less normal
+                
+                distribution of letters, as opposed to using 'Content
+                here,
+                content here', making it look like readable English.
+                Many desktop
+                publishing packages and web page editors now use Lorem
+                Ipsum as
+                their default model text, and a search for 'lorem
+                ipsum' will
+                uncover many web sites still in their infancy. Various
+                versions
+                have evolved over the years, sometimes by accident,
+                sometimes on
+                purpose (injected humour and the like).
+            </p>
+        </div>
+        <!-- akhir konten -->
+        <!-- awal footer -->
+        <div class="col-12 footer">
+            &copy; Copyright by Jack
+        
+        </div>
+        <!-- akhir footer -->
+    </div>
+</body>
+</html>
